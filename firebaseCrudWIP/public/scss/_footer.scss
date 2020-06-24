@@ -1,0 +1,36 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3vh;
+  background-color: transparent;
+  text-align: center;
+  margin-bottom: 3vh;
+  margin-top: 3vh;
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  color: black;
+  font-size: 1vw;
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .footerLeft {
+    margin-right: 5vw;
+  }
+
+  .footerMiddle {
+    margin-right: 2vw;
+  }
+
+  .footerRight {
+    margin-left: 5vw;
+  }
+
+  .footerRight img {
+    width: 2vw;
+    height: 2vh;
+  }
+}

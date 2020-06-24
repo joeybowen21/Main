@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edit Recipe</title>
+</head>
+<link rel="stylesheet" href="css/styles.css">
+<link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet'>
+<body class="editRecipe">
+
+<nav class="nav">
+    <a href="index.html"><img class="logo" src="assets/logo.png" alt="logo"></a>
+    <ul class="navLinks">
+        <li id="home" class="active"><a href="index.html">Home</a></li>
+        <li class="active"><a href="userRecipe.html">Browse</a></li>
+        <li class="active"><a href="createRecipe.html">Create Recipe</a></li>
+        <li class="active"><a href="recipes.html">Your Recipes</a></li>
+        <li id="loginOval" class="active"><a href="login.html">Login</a></li>
+    </ul>
+</nav>
+
+<div class="editRecipeFlexContainer">
+    <div class="editRecipeHolder">
+        <h1>Hey User, edit your recipe!</h1>
+        <form id="editRecipe">
+            <input type="text" placeholder="Add Recipe Image"><br>
+            <input type="text" placeholder="Recipe Name"><br>
+            <input type="text" placeholder="Recipe Description"><br>
+            <input type="text" placeholder="Recipe Total Time"><br>
+            <input type="text" placeholder="Recipe Serving Size"><br>
+            <h1>Enter Ingredients:</h1><br>
+            <input type="text" placeholder="Ingredient #1"><br>
+            <input type="text" placeholder="Ingredient #2"><br>
+            <input class="add" type="text" placeholder="Ingredient #3">
+            <i class="fas fa-plus-circle"></i>
+            <h1>Enter Instructions:</h1><br>
+            <input type="text" placeholder="Instruction #1"><br>
+            <input type="text" placeholder="Instruction #2"><br>
+            <input class="add" type="text" placeholder="Instruction #3"><br>
+            <i class="fas fa-plus-circle"></i>
+            <button>Submit Changes</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>
+        <span class="footerLeft">Copyright © 2019 The Jungle Cook</span>
+        <span class="footerMiddle"><a href="login.html">Login</a></span>
+        <span class="footerMiddle"><a href="recipes.html">Recipes by Category</a></span>
+        <span class="footerMiddle">Privacy and Copyright</span>
+        <span class="footerMiddle"><a href="createRecipe.html">Create Recipe</a></span>
+        <span class="footerMiddle"><a href="recipes.html">Your Recipes</a></span>
+        <span class="footerRight"><a href="https://facebook.com"><img src="assets/facebook.svg" alt="facebook"></a><a
+                href="https://instagram.com"><img src="assets/instagram.svg" alt="instagram"></a></span>
+    </p>
+</footer>
+<!-----------------------------------------------------------Firebase Scripts----------------------------------------------------------------->
+
+<!-- update the version number as needed -->
+<script defer src="/__/firebase/7.14.1/firebase-app.js"></script>
+<!-- include only the Firebase features as you need -->
+<script defer src="/__/firebase/7.14.1/firebase-auth.js"></script>
+<script defer src="/__/firebase/7.14.1/firebase-database.js"></script>
+<script defer src="/__/firebase/7.14.1/firebase-firestore.js"></script>
+<script defer src="/__/firebase/7.14.1/firebase-messaging.js"></script>
+<script defer src="/__/firebase/7.14.1/firebase-storage.js"></script>
+<!-- initialize the SDK after all desired features are loaded -->
+<script defer src="/__/firebase/init.js"></script>
+<!-----------------------------------------------------------Project Scripts----------------------------------------------------------------->
+<script src="js/firebase.js"></script>
+<script src="js/updateRecipe.js"></script>
+<script src="https://kit.fontawesome.com/017f6d6acd.js" crossorigin="anonymous"></script>
+</body>
+</html>

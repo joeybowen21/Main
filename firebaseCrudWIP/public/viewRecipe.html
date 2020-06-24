@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>View Recipe</title>
+</head>
+<link rel="stylesheet" href="css/styles.css">
+<link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet'>
+<body class="userViewRecipe">
+
+<nav class="nav">
+    <a href="index.html"><img class="logo" src="assets/logo.png" alt="logo"></a>
+    <ul class="navLinks">
+        <li id="home" class="active"><a href="index.html">Home</a></li>
+        <li class="active"><a href="userRecipe.html">Browse</a></li>
+        <li class="active"><a href="createRecipe.html">Create Recipe</a></li>
+        <li class="active"><a href="recipes.html">Your Recipes</a></li>
+        <li id="loginOval" class="active"><a href="login.html">Login</a></li>
+    </ul>
+</nav>
+
+<div class="recipeTitle"><h1>Supreme Pizza</h1></div>
+<div class="recipeParent">
+    <div class="recipeHolder">
+        <div class="recipeImg"><img src="assets/recipe-pizza.jpg" alt="pizza"></div>
+        <div class="recipeInfo"><h1>Description</h1><p>Make pizza night super duper out of this world with homemade pizza. This recipe is supreme with vegetables and two types of meat. Yum!</p><h1>Total Time</h1><p>1h 24min</p><h1>Servings</h1><p>4 servings</p></div>
+    </div>
+</div>
+
+<div class="ingredientHolder">
+    <ul>
+        <h1>Ingredients:</h1>
+        <li>1/4 batch pizza dough</li>
+        <li>2 tablespoons Last-Minute Pizza Sauce</li>
+        <li>10 slices pepperoni</li>
+        <li>1 cup cooked and crumbled Italian sausage</li>
+        <li>2 large mushrooms, sliced</li>
+        <li>sliced 1/4 bell pepper, sliced</li>
+        <li>1 tablespoon sliced black olives</li>
+        <li>1 cup shredded mozzarella cheese</li>
+    </ul>
+    <ul>
+        <h1>Instructions:</h1>
+        <li>1. Preheat the oven to 475°. Spray pizza pan with nonstick cooking or line a baking sheet with parchment paper.</li>
+        <li>2. Flatten dough into a thin round and place on the pizza pan.</li>
+        <li>3. Spread pizza sauce over the dough.</li>
+        <li>4. Layer the toppings over the dough in the order listed</li>
+        <li>5. Bake for 8 to 10 minutes or until the crust is crisp and the cheese melted and lightly browned.</li>
+    </ul>
+    <a href="userRecipe.html"><button id="viewEdit" class="editRecipeView">Edit Recipe</button></a>
+</div>
+
+<footer>
+    <p>
+        <span class="footerLeft">Copyright © 2019 The Jungle Cook</span>
+        <span class="footerMiddle"><a href="login.html">Login</a></span>
+        <span class="footerMiddle"><a href="recipes.html">Recipes by Category</a></span>
+        <span class="footerMiddle">Privacy and Copyright</span>
+        <span class="footerMiddle"><a href="createRecipe.html">Create Recipe</a></span>
+        <span class="footerMiddle"><a href="recipes.html">Your Recipes</a></span>
+        <span class="footerRight"><a href="https://facebook.com"><img src="assets/facebook.svg" alt="facebook"></a><a
+                href="https://instagram.com"><img src="assets/instagram.svg" alt="instagram"></a></span>
+    </p>
+</footer>
+<!-----------------------------------------------------------Firebase Scripts----------------------------------------------------------------->
+
+<!-- update the version number as needed -->
+<script defer src="/__/firebase/7.14.1/firebase-app.js"></script>
+<!-- include only the Firebase features as you need -->
+<script defer src="/__/firebase/7.14.1/firebase-auth.js"></script>
+<script defer src="/__/firebase/7.14.1/firebase-database.js"></script>
+<script defer src="/__/firebase/7.14.1/firebase-firestore.js"></script>
+<script defer src="/__/firebase/7.14.1/firebase-messaging.js"></script>
+<script defer src="/__/firebase/7.14.1/firebase-storage.js"></script>
+<!-- initialize the SDK after all desired features are loaded -->
+<script defer src="/__/firebase/init.js"></script>
+<!-----------------------------------------------------------Project Scripts----------------------------------------------------------------->
+<script src="js/firebase.js"></script>
+<script src="https://kit.fontawesome.com/017f6d6acd.js" crossorigin="anonymous"></script>
+</body>
+</html>

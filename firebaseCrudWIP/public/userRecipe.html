@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Recipe</title>
+</head>
+<link rel="stylesheet" href="css/styles.css">
+<link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet'>
+<body class="userRecipe">
+
+<nav class="nav">
+    <a href="index.html"><img class="logo" src="assets/logo.png" alt="logo"></a>
+    <ul class="navLinks">
+        <li id="home" class="active"><a href="index.html">Home</a></li>
+        <li class="active"><a href="userRecipe.html">Browse</a></li>
+        <li class="active"><a href="createRecipe.html">Create Recipe</a></li>
+        <li class="active"><a href="recipes.html">Your Recipes</a></li>
+        <li id="loginOval" class="active"><a href="login.html">Login</a></li>
+    </ul>
+</nav>
+
+<div class="userRecipeTitle"><h1>Recipes!</h1></div>
+<!-----------------------------------------------------------Firebase Scripts----------------------------------------------------------------->
+
+<!-- update the version number as needed -->
+<script defer src="/__/firebase/7.14.1/firebase-app.js"></script>
+<!-- include only the Firebase features as you need -->
+<script defer src="/__/firebase/7.14.1/firebase-auth.js"></script>
+<script defer src="/__/firebase/7.14.1/firebase-database.js"></script>
+<script defer src="/__/firebase/7.14.1/firebase-firestore.js"></script>
+<script defer src="/__/firebase/7.14.1/firebase-messaging.js"></script>
+<script defer src="/__/firebase/7.14.1/firebase-storage.js"></script>
+<!-- initialize the SDK after all desired features are loaded -->
+<script defer src="/__/firebase/init.js"></script>
+<!-----------------------------------------------------------Project Scripts----------------------------------------------------------------->
+<script src="js/firebase.js"></script>
+<script src="js/readRecipe.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="https://kit.fontawesome.com/017f6d6acd.js" crossorigin="anonymous"></script>
+</body>
+</html>

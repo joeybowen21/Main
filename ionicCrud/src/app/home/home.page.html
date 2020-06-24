@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-title style="text-align: center">The News App</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-toolbar>
+        <ion-searchbar style="padding-top: 5%" (click)="searchBarOpen=true; initSearchData()" showCancelButton="true" (ionCancel)="searchBarOpen=false" (ionInput)="filterSearchData($event)"></ion-searchbar>
+    </ion-toolbar>
+    <ion-list *ngIf="searchBarOpen">
+        <ion-item *ngFor="let article of searchData" routerLink="/detail/{{ article.name }}">{{article.name}}</ion-item>
+    </ion-list>
+
+    <div *ngFor="let article of dataService.articles">
+        <ion-card>
+            <img src="{{article.url}}" alt="article image">
+            <ion-item routerLink="/detail/{{ article.id }}" routerDirection="forward">
+                <ion-label>{{ article.title }}</ion-label>
+            </ion-item>
+            <ion-card-content>
+                <p>{{article.description}}</p>
+            </ion-card-content>
+            <ion-icon style="font-size: 25px" name="clipboard" (click)="updateArticle(article)"></ion-icon>
+            <ion-icon style="font-size: 25px" name="trash" (click)="deleteArticle(article)"></ion-icon>
+        </ion-card>
+    </div>
+
+</ion-content>
+
+<ion-footer>
+    <ion-tab-bar slot="bottom">
+        <ion-tab-button (click)="createArticle()" tab="schedule">
+            <ion-icon name="add-circle"></ion-icon>
+            <ion-label>Create Article</ion-label>
+        </ion-tab-button>
+    </ion-tab-bar>
+</ion-footer>

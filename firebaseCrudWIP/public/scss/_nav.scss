@@ -1,0 +1,50 @@
+.nav {
+  background: #efefef;
+  clear: both;
+  width: 99vw;
+  height: 25%;
+
+  .logo {
+    float: left;
+    margin-top: 3vh;
+    margin-left: 3vw;
+  }
+
+  .navLinks {
+    float: right;
+    margin-top: 3vh;
+    margin-right: 3vw;
+
+    li {
+      display: inline;
+      list-style-type: square;
+      padding-right: 3vw;
+
+      a:link {
+        line-height: 7vh;
+        font-size: 1.7em;
+        font-family: 'Caveat', serif;
+        text-decoration: none;
+        color: #000;
+        cursor: pointer;
+      }
+
+      a:hover {
+        border-bottom: 2px solid black;
+      }
+
+      a:visited {
+        color: #000;
+      }
+    }
+
+    #loginOval {
+      background-color: #FFD972;
+      padding: 1.8vh;
+      padding-left: 3vw;
+      padding-right: 3vw;
+      border-radius: 3em;
+    }
+  }
+
+}

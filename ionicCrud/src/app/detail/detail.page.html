@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-title style="text-align: center"> {{ article.title }} </ion-title>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref=""></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-card>
+        <img src="{{article.url}}" alt="article image">
+        <ion-item>
+            <ion-label>{{ article.title }}</ion-label>
+        </ion-item>
+        <ion-card-content>
+            <p>{{article.extDescription}}</p>
+        </ion-card-content>
+    </ion-card>
+
+</ion-content>

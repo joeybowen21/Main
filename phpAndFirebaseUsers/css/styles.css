@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #757575;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #757575;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+
+.navbar a {
+    padding: 8px;
+    margin: 8px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    border-bottom: 2px solid #000000;
+    border-left: 2px solid #000000;
+    border-right: 2px solid #000000;
+}
+
+
+.navbar a:hover {
+    border-bottom: 2px solid #00959e;
+    border-left: 2px solid #00959e;
+    border-right: 2px solid #00959e;
+}
+
+.header span {
+    font-size: 50px;
+    border-bottom: 2px solid #000000;
+    color: #000000;
+    padding: 2px;
+}
+
+.homeText {
+    width: 500px;
+    margin-top: 200px;
+    color: #000000;
+    border-bottom: 2px solid #000000;
+    border-left: 2px solid #000000;
+    border-right: 2px solid #000000;
+    padding: 8px;
+}
+
+#phpTable {
+    margin: 0 auto;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+    max-width: 1000px;
+}
+
+#phpTableImage {
+    margin-right: 100px;
+}
+
+#phpTableName {
+    padding: 0 0 0 100px;
+}
+
+img {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+#formWrapper {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+#formWrapperFire {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+
+#contactForm {
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 2px solid #000000;
+}
+
+.title {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000000;
+}
+
+.inputs {
+    margin-bottom: 20px;
+}
+
+.formInput {
+    margin: 10px;
+    padding: 10px;
+}
+
+.label {
+    border-bottom: 1px solid #000000;
+    border-left: 1px solid #000000;
+    padding-left: 2px;
+}
+
+#firstName {
+    margin-left: 10px;
+}
+
+#lastName {
+    margin-left: 10px;
+}
+
+#email {
+    margin-left: 30px;
+}
+
+#comment {
+    margin-left: 10px;
+    height: 100px;
+}
+
+#submitContact {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
+    color: #000000;
+    background-color: #ffffff;
+    border: none;
+}
+
+#alert {
+    text-align: center;
+    padding: 5px;
+    background: #66CCFF;
+    color: #ffffff;
+    margin-bottom: 10px;
+    display: none;
+}
+
+#messageContainer {
+    max-width: 90%;
+}
+
+#messageContainerFire {
+    width: 90%;
+}
+
+.message {
+    border: solid 2px #000000;
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+#message {
+    border: solid 2px #000000;
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+
+.messageComment {
+    padding: 5px;
+    word-break: break-all;
+}
+
+.messageLink {
+    text-decoration: none;
+    color: #000000;
+    border-bottom: solid 2px #000000;
+}
+
+#messageBody p {
+    display: flex;
+    margin: 0 auto;
+}
+
+#addContactLink {
+    display: flex;
+    margin: 0 auto;
+}
+
+#addContactLink a {
+    margin: 0 auto;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #000000;
+    border-bottom: 2px solid #000000;
+}
+
+#addContactLink a:hover {
+    color: #00959e;
+    border-bottom: 2px solid #00959e;
+}
+
+.googleSignIn {
+    margin-top: 50px;
+}

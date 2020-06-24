@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+</head>
+<link rel="stylesheet" href="css/styles.css">
+<link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet'>
+<body class="login">
+
+<nav class="nav">
+    <a href="index.html"><img class="logo" src="assets/logo.png" alt="logo"></a>
+    <ul class="navLinks">
+        <li id="home" class="active"><a href="index.html">Home</a></li>
+        <li class="active"><a href="userRecipe.html">Browse</a></li>
+        <li class="active"><a href="createRecipe.html">Create Recipe</a></li>
+        <li class="active"><a href="recipes.html">Your Recipes</a></li>
+        <li id="loginOval" class="active"><a href="login.html">Login</a></li>
+    </ul>
+</nav>
+
+<div class="loginFlexContainer">
+    <div class="loginHolder">
+        <h1>Login Here!</h1>
+        <form action="">
+            <input type="text" placeholder="Email Address"><br>
+            <input type="password" placeholder="Password"><br>
+            <button>Login</button>
+        </form>
+    </div>
+    <div class="loginHolder signUp">
+        <p>don't have an account?</p>
+        <h1>Sign Up!</h1>
+        <form action="">
+            <input type="text" placeholder="First Name"><br>
+            <input type="text" placeholder="Last Name"><br>
+            <input type="text" placeholder="Email Address"><br>
+            <input type="password" placeholder="Password"><br>
+            <button>Sign Up</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>
+        <span class="footerLeft">Copyright © 2019 The Jungle Cook</span>
+        <span class="footerMiddle"><a href="login.html">Login</a></span>
+        <span class="footerMiddle"><a href="recipes.html">Recipes by Category</a></span>
+        <span class="footerMiddle">Privacy and Copyright</span>
+        <span class="footerMiddle"><a href="createRecipe.html">Create Recipe</a></span>
+        <span class="footerMiddle"><a href="recipes.html">Your Recipes</a></span>
+        <span class="footerRight"><a href="https://facebook.com"><img src="assets/facebook.svg" alt="facebook"></a><a
+                href="https://instagram.com"><img src="assets/instagram.svg" alt="instagram"></a></span>
+    </p>
+</footer>
+<!-----------------------------------------------------------Firebase Scripts----------------------------------------------------------------->
+
+<!-- update the version number as needed -->
+<script defer src="/__/firebase/7.14.1/firebase-app.js"></script>
+<!-- include only the Firebase features as you need -->
+<script defer src="/__/firebase/7.14.1/firebase-auth.js"></script>
+<script defer src="/__/firebase/7.14.1/firebase-database.js"></script>
+<script defer src="/__/firebase/7.14.1/firebase-firestore.js"></script>
+<script defer src="/__/firebase/7.14.1/firebase-messaging.js"></script>
+<script defer src="/__/firebase/7.14.1/firebase-storage.js"></script>
+<!-- initialize the SDK after all desired features are loaded -->
+<script defer src="/__/firebase/init.js"></script>
+<!-----------------------------------------------------------Project Scripts----------------------------------------------------------------->
+<script src="js/firebase.js"></script>
+</body>
+</html>

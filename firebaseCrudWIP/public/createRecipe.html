@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create Recipe</title>
+</head>
+<link rel="stylesheet" href="css/styles.css">
+<link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet'>
+<body class="createRecipe">
+
+<nav class="nav">
+    <a href="index.html"><img class="logo" src="assets/logo.png" alt="logo"></a>
+    <ul class="navLinks">
+        <li id="home" class="active"><a href="index.html">Home</a></li>
+        <li class="active"><a href="userRecipe.html">Browse</a></li>
+        <li class="active"><a href="createRecipe.html">Create Recipe</a></li>
+        <li class="active"><a href="recipes.html">Your Recipes</a></li>
+        <li id="loginOval" class="active"><a href="login.html">Login</a></li>
+    </ul>
+</nav>
+
+<div class="createRecipeFlexContainer">
+    <div class="createRecipeHolder">
+        <h1>Hey User, create your recipe!</h1>
+        <form id="createRecipe" action="">
+            <input type="text" name="recipeImage" placeholder="Add Recipe Image (URL)"><br>
+            <input type="text" name="recipeName" placeholder="Recipe Name"><br>
+            <input type="text" name="recipeDescription" placeholder="Recipe Description"><br>
+            <input type="text" name="recipeTime" placeholder="Recipe Total Time"><br>
+            <input type="text" name="recipeServings" placeholder="Recipe Serving Size"><br>
+            <h1>Enter Ingredients:</h1><br>
+            <input  name="ingredient1" placeholder="Ingredient #1"><br>
+            <input  name="ingredient2" placeholder="Ingredient #2"><br>
+            <input  name="ingredient3" type="text" placeholder="Ingredient #3"><br>
+            <input  name="ingredient4" type="text" placeholder="Ingredient #4"><br>
+            <input  name="ingredient5" type="text" placeholder="Ingredient #5"><br>
+            <input  name="ingredient6" type="text" placeholder="Ingredient #6"><br>
+            <input  name="ingredient7" type="text" placeholder="Ingredient #7"><br>
+            <input  name="ingredient8" type="text" placeholder="Ingredient #8"><br>
+<!--            <i class="fas fa-plus-circle"></i>-->
+            <h1>Enter Instructions:</h1><br>
+            <input type="text" name="instruction1" placeholder="Instruction #1"><br>
+            <input type="text" name="instruction2" placeholder="Instruction #2"><br>
+            <input type="text" name="instruction3" placeholder="Instruction #3"><br>
+            <input type="text" name="instruction4" placeholder="Instruction #4"><br>
+            <input type="text" name="instruction5" placeholder="Instruction #5"><br>
+            <input type="text" name="instruction6" placeholder="Instruction #6"><br>
+            <input type="text" name="instruction7" placeholder="Instruction #7"><br>
+            <input name="instruction8" type="text" placeholder="Instruction #8"><br>
+<!--            <i class="fas fa-plus-circle"></i>-->
+            <button>Create Recipe</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>
+        <span class="footerLeft">Copyright © 2019 The Jungle Cook</span>
+        <span class="footerMiddle"><a href="login.html">Login</a></span>
+        <span class="footerMiddle"><a href="recipes.html">Recipes by Category</a></span>
+        <span class="footerMiddle">Privacy and Copyright</span>
+        <span class="footerMiddle"><a href="createRecipe.html">Create Recipe</a></span>
+        <span class="footerMiddle"><a href="recipes.html">Your Recipes</a></span>
+        <span class="footerRight"><a href="https://facebook.com"><img src="assets/facebook.svg" alt="facebook"></a><a
+                href="https://instagram.com"><img src="assets/instagram.svg" alt="instagram"></a></span>
+    </p>
+</footer>
+<!-----------------------------------------------------------Firebase Scripts----------------------------------------------------------------->
+
+<!-- update the version number as needed -->
+<script defer src="/__/firebase/7.14.1/firebase-app.js"></script>
+<!-- include only the Firebase features as you need -->
+<script defer src="/__/firebase/7.14.1/firebase-auth.js"></script>
+<script defer src="/__/firebase/7.14.1/firebase-database.js"></script>
+<script defer src="/__/firebase/7.14.1/firebase-firestore.js"></script>
+<script defer src="/__/firebase/7.14.1/firebase-messaging.js"></script>
+<script defer src="/__/firebase/7.14.1/firebase-storage.js"></script>
+<!-- initialize the SDK after all desired features are loaded -->
+<script defer src="/__/firebase/init.js"></script>
+<!-----------------------------------------------------------Project Scripts----------------------------------------------------------------->
+<script src="js/firebase.js"></script>
+<script src="js/createRecipe.js"></script>
+<script src="https://kit.fontawesome.com/017f6d6acd.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recipes</title>
+</head>
+<link rel="stylesheet" href="css/styles.css">
+<link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet'>
+<body class="recipes">
+
+<nav class="nav">
+    <a href="index.html"><img class="logo" src="assets/logo.png" alt="logo"></a>
+    <ul class="navLinks">
+        <li id="home" class="active"><a href="index.html">Home</a></li>
+        <li class="active"><a href="userRecipe.html">Browse</a></li>
+        <li class="active"><a href="createRecipe.html">Create Recipe</a></li>
+        <li class="active"><a href="recipes.html">Your Recipes</a></li>
+        <li id="loginOval" class="active"><a href="login.html">Login</a></li>
+    </ul>
+</nav>
+
+<div class="recipeParent">
+    <div class="recipeTitle"><h1>Recipes: Try some today!</h1></div>
+    <div class="recipeHolder">
+        <div class="recipeImg"><img src="assets/recipe-pizza.jpg" alt="pizza"></div>
+        <div class="recipeInfo"><h1>Supreme Pizza</h1><p>Make pizza night super duper out of this world with homemade pizza. This recipe is supreme with vegetables and two types of meat. Yum!</p><p>
+            <img src="assets/time.svg" alt="time">1h 24min</p><p><img src="assets/servings.svg" alt="servings">4 servings</p></div>
+        <div class="recipeImg"><img src="assets/recipe-burger.jpg" alt="burger"></div>
+        <div class="recipeInfo"><h1>Classic Burger</h1><p>Sink your teeth into a delicious restaurant-style, hamburger recipe made from lean beef. Skip the prepackaged patties and take the extra time to craft up your own, and that little extra effort will be worth it.</p><p>
+            <img src="assets/time.svg" alt="time">30min</p><p><img src="assets/servings.svg" alt="servings">4 servings</p></div>
+        <div class="recipeImg"><img src="assets/recipe-pilaf.jpg" alt="pilaf"></div>
+        <div class="recipeInfo"><h1>Chicken Biyrani</h1><p>Chicken Biryani is a bold and flavorful Indian dish with crazy tender bites of chicken with bell peppers in a deliciously spiced and fragrant rice.</p><p>
+            <img src="assets/time.svg" alt="time">1h 15min</p><p><img src="assets/servings.svg" alt="servings">6 servings</p></div>
+        <div class="recipeImg"><img style="width: 1000px" src="assets/recipe-chowmein.jpg" alt="chow mein"></div>
+        <div class="recipeInfo"><h1>Ch. Chow Mein</h1><p>A great Chow Mein comes down to the sauce - it takes more than just soy sauce and sugar! Jam packed with a surprising amount of hidden vegetables, customize this Chicken Chow Mein recipe using your protein of choice!</p><p>
+            <img src="assets/time.svg" alt="time">20min</p><p><img src="assets/servings.svg" alt="servings">4 servings</p></div>
+    </div>
+</div>
+
+<footer>
+    <p>
+        <span class="footerLeft">Copyright © 2019 The Jungle Cook</span>
+        <span class="footerMiddle"><a href="login.html">Login</a></span>
+        <span class="footerMiddle"><a href="recipes.html">Recipes by Category</a></span>
+        <span class="footerMiddle">Privacy and Copyright</span>
+        <span class="footerMiddle"><a href="createRecipe.html">Create Recipe</a></span>
+        <span class="footerMiddle"><a href="recipes.html">Your Recipes</a></span>
+        <span class="footerRight"><a href="https://facebook.com"><img src="assets/facebook.svg" alt="facebook"></a><a
+                href="https://instagram.com"><img src="assets/instagram.svg" alt="instagram"></a></span>
+    </p>
+</footer>
+<!-----------------------------------------------------------Firebase Scripts----------------------------------------------------------------->
+
+<!-- update the version number as needed -->
+<script defer src="/__/firebase/7.14.1/firebase-app.js"></script>
+<!-- include only the Firebase features as you need -->
+<script defer src="/__/firebase/7.14.1/firebase-auth.js"></script>
+<script defer src="/__/firebase/7.14.1/firebase-database.js"></script>
+<script defer src="/__/firebase/7.14.1/firebase-firestore.js"></script>
+<script defer src="/__/firebase/7.14.1/firebase-messaging.js"></script>
+<script defer src="/__/firebase/7.14.1/firebase-storage.js"></script>
+<!-- initialize the SDK after all desired features are loaded -->
+<script defer src="/__/firebase/init.js"></script>
+<!-----------------------------------------------------------Project Scripts----------------------------------------------------------------->
+<script src="js/firebase.js"></script>
+</body>
+</html>
